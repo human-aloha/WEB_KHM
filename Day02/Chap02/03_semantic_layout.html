@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시맨틱 요소 - 레이아웃</title>
+
+    <!-- NotoSansKR -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0;}
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        header {
+            background-color: lightgray;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        nav {
+            float: left;
+            width: 20%;
+            height: 300px;
+            background-color: #339999;
+            padding: 20px;
+        }
+
+        section::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        footer {
+            background-color: #ffcc00;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        /* 반응형 적용 - 가로 사이즈 600px 이하 */
+        @media screen and (max-width: 600px) {
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>semantic 태그를 이용한 레이아웃</h1>
+    <header>
+        <h2>HEADER</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">menu 001</a></li>
+                <li><a href="#">menu 002</a></li>
+                <li><a href="#">menu 003</a></li>
+                <li><a href="#">menu 004</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>휴먼교육센터</h1>
+            <p>
+                위하여 든 속잎나고, 것이다.보라, 찬미를 끓는다. 실현에 얼음에 얼마나 청춘의 피고 충분히 가진 이것이다. 소리다.이것은 이상은 위하여서, 눈에 끓는 없으면, 것은 이상 보라. 온갖 풀이 용기가 꽃이 인생을 튼튼하며, 뿐이다. 피고 때에, 할지라도 평화스러운 커다란 쓸쓸한 그들의 되려니와, 든 황금시대다. 인생에 그러므로 청춘의 이상은 풍부하게 스며들어 같으며, 전인 하는 부패뿐이다.
+            </p>
+            <p>
+                피고, 힘차게 품으며, 넣는 보라. 청춘 위하여서 동력은 공자는 싶이 길지 있을 인간의 피다. 풀이 물방아 청춘 고동을 보배를 날카로우나 이상 방지하는 위하여서. 들어 더운지라 피어나기 몸이 가치를 새가 간에 안고, 피다. 그들의 설산에서 방지하는 이는 싸인 아니한 반짝이는 사랑의 그리하였는가?
+            </p>
+        </article>
+
+    </section>
+
+    <footer>
+        <h2>FOOTER</h2>
+    </footer>
+</body>
+</html>
